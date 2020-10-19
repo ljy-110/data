@@ -1,18 +1,18 @@
 <template>
     <div class="box">
-        <h3 style="text-align: center;">Œ¢Œ¢≈…µ•π‹¿ÌœµÕ≥</h3>
+        <h3 style="text-align: center;">ÂæÆÂæÆÊ¥æÂçïÁÆ°ÁêÜÁ≥ªÁªü</h3>
         <template>
             <el-tabs v-model="activeName" @tab-click="handleLoad">
-                <el-tab-pane label="”√ªß" name="1">
+                <el-tab-pane label="Áî®Êà∑" name="1">
                     <userInfo :key="timer1"></userInfo>
                 </el-tab-pane>
-                <el-tab-pane lazy label=" ˝æ›µº»Î" name="2" >
+                <el-tab-pane lazy label="Êï∞ÊçÆÂØºÂÖ•" name="2" >
                     <improtData :key="timer2"></improtData>
                 </el-tab-pane>
-                <el-tab-pane lazy label=" ˝æ›∑÷Œˆ" name="3">
+                <el-tab-pane lazy label="Êï∞ÊçÆÂàÜÊûê" name="3">
                     <analysisData :key="timer3"></analysisData>
                 </el-tab-pane>
-                <el-tab-pane lazy label="»∫" name="4">
+                <el-tab-pane lazy label="Áæ§" name="4">
                     <group :key="timer4"></group>
                 </el-tab-pane>
             </el-tabs>

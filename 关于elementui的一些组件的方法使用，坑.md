@@ -5,7 +5,7 @@
 ```vue
 //添加oninput="value=value.replace(/[^\d]/g,'')"
 <el-form-item label="邮政编码" prop="zip">
-   <el-input clearable oninput="value=value.replace(/[^\d]/g,'')" v-model="ruleForm.zip" placeholder="请输入邮政编码"></el-input>
+   <el-input clearable oninput="value=value.replace(/^\d{6}$/,'')" v-model="ruleForm.zip" placeholder="请输入邮政编码"></el-input>
 </el-form-item>
 ```
 

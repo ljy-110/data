@@ -1,6 +1,6 @@
-Æ½Ê±µÄ¿ª·¢ÖĞ£¬ÎÒÃÇĞèÒªÁ¬½ÓÆäËûµçÄÔÀ´ÅÜÏîÄ¿µÄÊ±ºò£¬¾ÍĞèÒª°ÑipµØÖ·»»³ÉĞèÒªÁ¬½ÓµçÄÔµÄipµØÖ·¡£ÔÚconfigÎÄ¼ş¼ĞÏÂµÄindex.jsµÄÎÄ¼şÀïÃæÌí¼ÓĞŞ¸Ä
+å¹³æ—¶çš„å¼€å‘ä¸­ï¼Œæˆ‘ä»¬éœ€è¦è¿æ¥å…¶ä»–ç”µè„‘æ¥è·‘é¡¹ç›®çš„æ—¶å€™ï¼Œå°±éœ€è¦æŠŠipåœ°å€æ¢æˆéœ€è¦è¿æ¥ç”µè„‘çš„ipåœ°å€ã€‚åœ¨configæ–‡ä»¶å¤¹ä¸‹çš„index.jsçš„æ–‡ä»¶é‡Œé¢æ·»åŠ ä¿®æ”¹
 
-¶øÎÒÃÇÆ½Ê±Ò²¿ÉÒÔĞŞ¸Ä¶Ë¿ÚºÅ8080À´£¬ÅÜ¶à¸övueÏîÄ¿
+è€Œæˆ‘ä»¬å¹³æ—¶ä¹Ÿå¯ä»¥ä¿®æ”¹ç«¯å£å·8080æ¥ï¼Œè·‘å¤šä¸ªvueé¡¹ç›®
 
 dev: {
     // Paths
@@ -10,32 +10,34 @@ dev: {
       '/api': {
         target: 'http://192.168.101.153:9099',
         changeOrigin:true,
-        // secure: false,  // Èç¹ûÊÇhttps½Ó¿Ú£¬ĞèÒªÅäÖÃÕâ¸ö²ÎÊı
+        // secure: false,  // å¦‚æœæ˜¯httpsæ¥å£ï¼Œéœ€è¦é…ç½®è¿™ä¸ªå‚æ•°
         pathRewrite: {
             '^/api': ''
         }
       }
     },
 
-    // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: false,
-    errorOverlay: true,
-    notifyOnErrors: true,
-    poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
-    useEslint: true,
-    showEslintErrorsInOverlay: false,
+```js
+// Various Dev Server settings
+host: 'localhost', // can be overwritten by process.env.HOST
+port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+autoOpenBrowser: false,
+errorOverlay: true,
+notifyOnErrors: true,
+poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
+useEslint: true,
+showEslintErrorsInOverlay: false,
 
-    /**
-     * Source Maps
-     */
-    devtool: 'cheap-module-eval-source-map',
-    cacheBusting: true,
-    cssSourceMap: true
+/**
+ * Source Maps
+ */
+devtool: 'cheap-module-eval-source-map',
+cacheBusting: true,
+cssSourceMap: true
+```
   },
 
-È»ºóÔÙµ½vue.config.jsµÄÎÄ¼şÀïÃæĞŞ¸ÄÌí¼Ótarget: url,
+ç„¶åå†åˆ°vue.config.jsçš„æ–‡ä»¶é‡Œé¢ä¿®æ”¹æ·»åŠ target: url,
  publicPath: process.env.NODE_ENV === "production" ? "" : "/",
     devServer:{
         open:true,
@@ -45,7 +47,7 @@ dev: {
                 target: 'http://192.168.101.153:9099',
                 ws: true,
                 changeOrigin : true,
-                // secure: false,  // Èç¹ûÊÇhttps½Ó¿Ú£¬ĞèÒªÅäÖÃÕâ¸ö²ÎÊı
+                // secure: false,  // å¦‚æœæ˜¯httpsæ¥å£ï¼Œéœ€è¦é…ç½®è¿™ä¸ªå‚æ•°
                 pathRewrite: {
                     '^/api': ''
                 }
