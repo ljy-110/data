@@ -20,7 +20,7 @@ this.$router.push({path:'/operate/${id}'})
 获取参数
 
 ```js
-this.$route.params.id
+
 
 或者也可以通过props来获取参数
 
@@ -60,7 +60,7 @@ this.$router.push('/operate')
 
 this.$router.push({path:'/operate'})
 
-this.$router.push({path:'/operate/${id}'})
+this.$router.push({path:'/operate/${id}'})//刷新还在
  
 this.$router.push({name:'operate', params:{id: '2'}})
  

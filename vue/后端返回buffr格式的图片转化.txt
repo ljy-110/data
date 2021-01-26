@@ -7,7 +7,7 @@ let bytes = new Uint8Array(res.photo.data);
 let data = "";
         let len = bytes.byteLength;
         for (let i = 0; i < len; i++) {
-        ¡¡¡¡data += String.fromCharCode(bytes[i]);
+        ã€€ã€€data += String.fromCharCode(bytes[i]);
         }
         let image = "data:image/png;base64," + window.btoa(data);
         this.codeImg = image

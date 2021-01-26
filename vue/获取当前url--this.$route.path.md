@@ -44,3 +44,33 @@ methods: {
 }
 ```
 
+```
+beforeRouteLeave(to, from, next) {
+    next()
+},
+beforeRouteEnter(to, from, next) {
+    next()
+},
+beforeRouteUpdate(to, from, next) { // 用于相同路由组件的的参数更新
+    next()
+},
+data:{},
+method: {}
+
+//
+beforeRouteLeave(to, from, next) {
+    console.log(this.ruleForm || this.src);
+    if(this.ruleForm || this.src){
+      this.$confirm('是否将你填写的数据保存为草稿？')
+      .then(_ => {
+        // next()
+      })
+      .catch(_ => {
+        next()
+      });
+    }else{
+      next()
+    }
+  },
+```
+

@@ -170,3 +170,7 @@ Visual Studio Code插件，可自动完成导入语句中的npm模块。
 30.vue
 
 31.wechat-snippet
+
+32.Vue 3 Snippets Highlight Formatters And Generator
+
+代码格式化，可以选择 shift+alt+f，来操作格式化代码
